@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "@types/qrcode-terminal": "^0.12.2",
     "typescript": "^5.2.2"
   }
 }
