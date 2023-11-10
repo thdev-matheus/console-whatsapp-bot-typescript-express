@@ -1,32 +1,26 @@
 import "dotenv/config";
 import { client } from "./clientWhats";
-import { createTranscription } from "./openai";
-import {
-  convertBase64ToAudio,
-  isAudioAndNotGroup,
-  sendMessageOnGroup,
-} from "./utils";
-import { v4 as uuid } from "uuid";
+import { StateConversation, Flow, makeMenu } from "./utils";
 
 client.on("message", async (msg) => {
-  if (await isAudioAndNotGroup(msg)) {
-    const media = await msg.downloadMedia();
-
-    const fileName = media.filename || "audio";
-
-    convertBase64ToAudio(media.data, fileName);
+  const chat = await msg.getChat();
+  if (chat.isGroup) {
+    return;
   }
-});
 
-client.on("message_create", async (msg) => {
-  if (msg.body == "/toText") {
-    const replyedAudioOwner = await client.getContactById(msg.to);
-    const replyedOwnerName = replyedAudioOwner.name;
+  const contact = await chat.getContact();
 
-    const textAudio = await createTranscription(`audio.ogg`);
+  if (contact.name == "Jess") {
+    await chat.sendSeen();
+    await chat.sendStateTyping();
+    const conversation = await StateConversation.loadState(chat);
 
-    await sendMessageOnGroup(client, textAudio, replyedOwnerName!);
-    await msg.delete(true);
+    if (conversation.firstTime || conversation.menuChoose === "0") {
+      await chat.sendMessage(Flow.firstMessage);
+      await chat.sendMessage(makeMenu(Flow.flow));
+      await chat.clearState();
+    } else {
+    }
   }
 });
 

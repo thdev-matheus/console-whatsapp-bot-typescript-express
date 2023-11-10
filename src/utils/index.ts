@@ -1,10 +1,5 @@
-import { convertBase64ToAudio } from "./src/base64";
-import { isAudioAndNotGroup, sendMessageOnGroup } from "./src/messages";
-import { contactYourself } from "./src/contact";
+import { StateConversation } from "./src/state";
+import { Flow } from "./src/flow";
+import { makeMenu } from "./src/message";
 
-export {
-  convertBase64ToAudio,
-  isAudioAndNotGroup,
-  sendMessageOnGroup,
-  contactYourself,
-};
+export { StateConversation, Flow, makeMenu };
