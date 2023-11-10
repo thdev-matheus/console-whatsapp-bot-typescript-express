@@ -3,20 +3,30 @@
   "version": "1.0.0",
   "description": "Projeto para converter audio para texto no whats",
   "main": "index.js",
+  "module": "ES6",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node --watch src/index.ts",
+    "dev": "cross-env ts-node-dev --ignore-watch node_modules src/index.ts",
     "start": ""
-
   },
   "keywords": [],
-  "author": "",
+  "author": "Matheus Vieira",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "openai": "^4.17.3",
+    "qrcode-terminal": "^0.12.0",
+    "uuid": "^9.0.1",
+    "whatsapp-web.js": "^1.23.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.21",
+    "@types/node": "^20.9.0",
+    "@types/qrcode-terminal": "^0.12.2",
+    "@types/uuid": "^9.0.7",
+    "cross-env": "^7.0.3",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.2.2"
   }
 }
