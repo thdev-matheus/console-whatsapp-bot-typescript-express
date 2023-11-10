@@ -6,7 +6,7 @@ export const client = new Client({
 });
 
 client.on("qr", (qr) => {
-  qrCode.generate(qr);
+  qrCode.generate(qr, { small: true });
 });
 
 client.on("ready", () => {

@@ -6,10 +6,11 @@ const openaiApiKey = process.env.OPENAI_API_KEY;
 
 const openai = new OpenAI({
   apiKey: openaiApiKey,
+  timeout: 60000,
 });
 
 const createTranscription = async (fileName: string) => {
-  const pathFile = path.join(`${__dirname}/resources/`, fileName);
+  const pathFile = path.join(`${__dirname}/utils/src/resources/`, fileName);
 
   try {
     const transcription = await openai.audio.transcriptions.create({
@@ -21,6 +22,7 @@ const createTranscription = async (fileName: string) => {
 
     return transcription;
   } catch (error) {
+    console.log(error);
     console.log("erro de trascrição =>" + error);
 
     return "Conversão falhou 😥";
