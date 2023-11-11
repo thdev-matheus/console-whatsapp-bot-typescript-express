@@ -1,6 +1,7 @@
 import { Chat } from "whatsapp-web.js";
-import { Flow, StateConversation } from "../../actions";
+import { StateConversation } from "../../actions";
 import { IMenu } from "../../types/menu.type";
+import { Flow } from "../../flow";
 
 export class MessageService {
   static startService = async (chat: Chat) => {

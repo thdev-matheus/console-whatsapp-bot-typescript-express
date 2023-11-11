@@ -1,4 +1,4 @@
-import { IMenu } from "../../types/menu.type";
+import { IMenu } from "../types/menu.type";
 
 export class Flow {
   static firstMessage = `Olá, bem-vindo(a) a Kali Gráfica!
