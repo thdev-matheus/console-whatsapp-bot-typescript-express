@@ -6,7 +6,7 @@ Estamos muito felizes por ter você por aqui.
 Digite encerrar a qualquer momento para encerrar o atendimento.
 Em que podemos ajudar?`;
 
-  static flow: IMenu[] = [
+  static menu: IMenu[] = [
     { id: 1, message: "1. Desenvolvimento de sites e aplicativos" },
 
     {

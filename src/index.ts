@@ -6,7 +6,7 @@ import {
   makeMenu,
   makeMessage,
   makeAnswer,
-} from "./utils";
+} from "./actions";
 
 client.on("message", async (msg) => {
   const chat = await msg.getChat();

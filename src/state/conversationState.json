@@ -1,17 +1,2 @@
 [
-  {
-    "id": {
-      "server": "c.us",
-      "user": "558196732411",
-      "_serialized": "558196732411@c.us"
-    },
-    "firstTime": false,
-    "finished": true,
-    "clientWaiting": true,
-    "menuChoose": [
-      1,
-      10
-    ],
-    "inService": true
-  }
 ]

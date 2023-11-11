@@ -1,12 +1,13 @@
 export interface IStateConversation {
-  id: {
-    server: string;
-    user: string;
-    _serialized: string;
-  };
+  id: IChatId;
   firstTime: boolean;
   finished: boolean;
   inService: boolean;
-  clientWaiting: boolean;
   menuChoose: [number, number];
+}
+
+export interface IChatId {
+  server: string;
+  user: string;
+  _serialized: string;
 }
