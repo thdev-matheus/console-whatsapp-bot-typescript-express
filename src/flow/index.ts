@@ -3,7 +3,7 @@ import { IMenu } from "../types/menu.type";
 export class Flow {
   static firstMessage = `Olá, bem-vindo(a) a Kali Gráfica!
 Estamos muito felizes por ter você por aqui.
-Digite encerrar a qualquer momento para encerrar o atendimento.
+Digite "menu" para ver as opções ou "encerrar" a qualquer momento para encerrar o atendimento.
 Em que podemos ajudar?`;
 
   static menu: IMenu[] = [

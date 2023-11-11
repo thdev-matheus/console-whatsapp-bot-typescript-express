@@ -1,12 +1,6 @@
 import "dotenv/config";
 import { client } from "./clientWhats";
-import {
-  StateConversation,
-  Flow,
-  makeMenu,
-  makeMessage,
-  makeAnswer,
-} from "./actions";
+import { makeMessage, makeAnswer } from "./actions";
 
 client.on("message", async (msg) => {
   const chat = await msg.getChat();
@@ -28,11 +22,7 @@ client.on("message_create", async (msg) => {
     return;
   }
 
-  if (msg.body.toLowerCase().trim() === "olá") {
-    console.log("em atendimento");
-
-    makeAnswer(msg);
-  }
+  makeAnswer(msg);
 });
 
 client.initialize();

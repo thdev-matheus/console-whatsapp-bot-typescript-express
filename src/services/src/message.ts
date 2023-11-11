@@ -23,6 +23,10 @@ export class MessageService {
 
 export class MessageMenu {
   static firstMenu = async (chat: Chat) => {
+    await StateConversation.changeMenuConversation(
+      chat.id._serialized,
+      [1, 10]
+    );
     await chat.sendMessage(Flow.firstMessage);
     await chat.sendMessage(
       this.makeMenuMessage(Flow.menu.filter((menu) => menu.id < 10))

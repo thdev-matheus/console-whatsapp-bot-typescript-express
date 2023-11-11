@@ -6,6 +6,8 @@ import { MessageMenu, MessageService } from "../../services";
 export const makeAnswer = async (msg: Message) => {
   const chat = await msg.getChat();
 
+  await StateConversation.loadState(chat.id);
+
   if (msg.body.toLowerCase().trim() === "obrigado!") {
     MessageService.finishService(chat);
   } else if (msg.body.toLowerCase().trim() === "olá!") {
