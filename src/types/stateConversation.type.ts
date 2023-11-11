@@ -6,6 +6,7 @@ export interface IStateConversation {
   };
   firstTime: boolean;
   finished: boolean;
+  inService: boolean;
   clientWaiting: boolean;
-  menuChoose: string;
+  menuChoose: [number, number];
 }

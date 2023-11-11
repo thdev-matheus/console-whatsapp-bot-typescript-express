@@ -1,6 +1,12 @@
 import "dotenv/config";
 import { client } from "./clientWhats";
-import { StateConversation, Flow, makeMenu } from "./utils";
+import {
+  StateConversation,
+  Flow,
+  makeMenu,
+  makeMessage,
+  makeAnswer,
+} from "./utils";
 
 client.on("message", async (msg) => {
   const chat = await msg.getChat();
@@ -11,16 +17,21 @@ client.on("message", async (msg) => {
   const contact = await chat.getContact();
 
   if (contact.name == "Jess") {
-    await chat.sendSeen();
-    await chat.sendStateTyping();
-    const conversation = await StateConversation.loadState(chat);
+    makeMessage(msg);
+  }
+});
 
-    if (conversation.firstTime || conversation.menuChoose === "0") {
-      await chat.sendMessage(Flow.firstMessage);
-      await chat.sendMessage(makeMenu(Flow.flow));
-      await chat.clearState();
-    } else {
-    }
+client.on("message_create", async (msg) => {
+  const chat = await msg.getChat();
+
+  if (chat.isGroup) {
+    return;
+  }
+
+  if (msg.body.toLowerCase().trim() === "olá") {
+    console.log("em atendimento");
+
+    makeAnswer(msg);
   }
 });
 

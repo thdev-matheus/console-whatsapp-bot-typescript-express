@@ -5,9 +5,13 @@
       "user": "558196732411",
       "_serialized": "558196732411@c.us"
     },
-    "firstTime": true,
-    "finished": false,
-    "clientWaiting": false,
-    "menuChoose": "0"
+    "firstTime": false,
+    "finished": true,
+    "clientWaiting": true,
+    "menuChoose": [
+      1,
+      10
+    ],
+    "inService": true
   }
 ]

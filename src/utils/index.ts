@@ -1,5 +1,5 @@
 import { StateConversation } from "./src/state";
 import { Flow } from "./src/flow";
-import { makeMenu } from "./src/message";
+import { makeMenu, makeMessage, makeAnswer } from "./src/message";
 
-export { StateConversation, Flow, makeMenu };
+export { StateConversation, Flow, makeMenu, makeMessage, makeAnswer };

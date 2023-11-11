@@ -1,189 +1,196 @@
 import { IMenu } from "../../types/menu.type";
 
-class Menu {
-  id: string;
-  message: string;
-  submenu?: IMenu[];
-
-  constructor({ id, message, subMenu }: IMenu) {
-    this.id = id;
-    this.message = message;
-    this.submenu = subMenu;
-  }
-}
-
 export class Flow {
   static firstMessage = `Olá, bem-vindo(a) a Kali Gráfica!
 Estamos muito felizes por ter você por aqui.
+Digite encerrar a qualquer momento para encerrar o atendimento.
 Em que podemos ajudar?`;
 
-  static recurringMessage = `Bem vindo(a) de volta!
-Em que podemos ajudar?`;
+  static flow: IMenu[] = [
+    { id: 1, message: "1. Desenvolvimento de sites e aplicativos" },
 
-  static flow: Menu[] = [
-    new Menu({
-      id: "1",
-      message: "1. Desenvolvimento de Sites e Aplicativo.",
-      subMenu: [
-        new Menu({
-          id: "1.1",
-          message: "1. Desenvolvimento de Sites",
-          subMenu: [
-            new Menu({
-              id: "1.1.1",
-              message: "1. Site Institucional",
-            }),
+    {
+      id: 11,
+      message: "1. Desenvolvimento de sites",
+    },
 
-            new Menu({
-              id: "1.1.2",
-              message: "2. Landing Page",
-            }),
+    {
+      id: 111,
+      message: "1. Site institucional",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-            new Menu({
-              id: "1.1.3",
-              message: "3. E-commerce",
-            }),
+    {
+      id: 112,
+      message: "2. E-commerce",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-            new Menu({
-              id: "1.1.4",
-              message: "4. Catálogo",
-            }),
+    {
+      id: 113,
+      message: "3. Catálogo",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-            new Menu({
-              id: "1.1.5",
-              message: "5. Portfólio",
-            }),
+    {
+      id: 114,
+      message: "4. Landing page",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-            new Menu({
-              id: "1.1.6",
-              message: "6. Outros",
-            }),
+    {
+      id: 115,
+      message: "5. Portfólio",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-            new Menu({
-              id: "1.1.7",
-              message: "7. Voltar",
-            }),
-          ],
-        }),
+    {
+      id: 116,
+      message: "6. Outro",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-        new Menu({
-          id: "1.2",
-          message: "2. Desenvolvimento de Aplicativos",
-          subMenu: [
-            new Menu({
-              id: "1.2.1",
-              message: "1. Institucional",
-            }),
+    { id: 117, message: "7. Menu inicial" },
 
-            new Menu({
-              id: "1.2.2",
-              message: "2. E-commerce",
-            }),
+    {
+      id: 12,
+      message: "2. Desenvolvimento de aplicativos",
+    },
 
-            new Menu({
-              id: "1.2.3",
-              message: "3. Catálogo",
-            }),
+    {
+      id: 121,
+      message: "1. App institucional",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-            new Menu({
-              id: "1.2.4",
-              message: "4. Outros",
-            }),
+    {
+      id: 122,
+      message: "2. App E-commerce",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-            new Menu({
-              id: "1.2.5",
-              message: "5. Voltar",
-            }),
-          ],
-        }),
+    {
+      id: 123,
+      message: "3. App Catálogo",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-        new Menu({
-          id: "1.3",
-          message: "3. voltar",
-        }),
-      ],
-    }),
+    {
+      id: 124,
+      message: "4. Outro",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-    new Menu({
-      id: "2",
-      message: "2. Gerenciamento de Redes Sociais.",
-      subMenu: [
-        new Menu({
-          id: "2.1",
-          message: "1. Plano Inicial",
-        }),
+    { id: 125, message: "5. Menu inicial" },
 
-        new Menu({
-          id: "2.2",
-          message: "2. Plano Básico",
-        }),
+    { id: 13, message: "3. Menu inicial" },
 
-        new Menu({
-          id: "2.3",
-          message: "3. Plano Master",
-        }),
+    {
+      id: 2,
+      message: "2. Gerenciamento de redes sociais",
+    },
 
-        new Menu({
-          id: "2.4",
-          message: "4. Conhecer Planos",
-        }),
+    {
+      id: 21,
+      message: "1. Plano inicial",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-        new Menu({
-          id: "2.5",
-          message: "5. Voltar",
-        }),
-      ],
-    }),
+    {
+      id: 22,
+      message: "2. Plano básico",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-    new Menu({
-      id: "3",
-      message: "3. Serviços Gráficos",
-      subMenu: [
-        new Menu({
-          id: "3.1",
-          message: "1. Arte, Diagramação ou Ilustração",
-        }),
+    {
+      id: 23,
+      message: "3. Plano master",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-        new Menu({
-          id: "3.2",
-          message: "2. Impressão Comum ou Xerox",
-        }),
+    {
+      id: 24,
+      message: "4. Conhecer planos",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-        new Menu({
-          id: "3.3",
-          message: "3. Impressão em Papel Especial",
-        }),
+    { id: 25, message: "5. Menu inicial" },
 
-        new Menu({
-          id: "3.4",
-          message: "4. Personalizados",
-        }),
+    {
+      id: 3,
+      message: "3. Serviços gráficos",
+    },
 
-        new Menu({
-          id: "3.5",
-          message: "5. voltar",
-        }),
-      ],
-    }),
+    {
+      id: 31,
+      message: "1. Arte, diagramação ou ilustração",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
 
-    new Menu({
-      id: "4",
+    {
+      id: 32,
+      message: "2. Impressão comum ou xerox",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
+
+    {
+      id: 33,
+      message: "3. Impressão papel especial",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
+
+    {
+      id: 34,
+      message: "4. personalizados",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
+
+    { id: 35, message: "5. Menu inicial" },
+
+    {
+      id: 4,
       message: "4. Falar com atendente",
-    }),
+      action:
+        "Você solicitou falar com atendente.\nDentro de instantes entraremos em contato.\nPara melhor atender, conte aqui o que deseja.",
+    },
 
-    new Menu({
-      id: "5",
+    {
+      id: 5,
       message: "5. Ver catálogo",
-    }),
+      action:
+        "Confira o nosso catálogo em:\nhttps://wa.me/c/558196336588\nA Kali Gráfica agradece o seu contato!",
+    },
 
-    new Menu({
-      id: "6",
+    {
+      id: 6,
       message: "6. Ver site",
-    }),
+      action:
+        "Confira o nosso site em:\nhttps://kali-grafica.vercel.app/\nA Kali Gráfica agradece o seu contato!",
+    },
 
-    new Menu({
-      id: "7",
+    {
+      id: 7,
       message: "7. Encerrar",
-    }),
+      action:
+        "Encerrando atendimento...\nA Kali Gráfica agradece o seu contato!",
+    },
   ];
 }

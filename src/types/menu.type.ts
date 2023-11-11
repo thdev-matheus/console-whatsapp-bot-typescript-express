@@ -1,5 +1,5 @@
 export interface IMenu {
-  id: string;
+  id: number;
   message: string;
-  subMenu?: IMenu[];
+  action?: string;
 }
