@@ -78,7 +78,13 @@ export const makeMessage = async (msg: Message) => {
   }
 
   // caso de resposta em que o menu pode ser enviado novamente
-  if (chosenOption.id === 6 || chosenOption.id === 5) {
+  if (
+    chosenOption.id === 6 ||
+    chosenOption.id === 5 ||
+    chosenOption.id === 24 ||
+    chosenOption.id === 118 ||
+    chosenOption.id === 127
+  ) {
     await chat.sendMessage(chosenOption.message);
     await chat.sendMessage(chosenOption.action);
     await chat.sendMessage("Podemos te ajudar em algo mais?");
@@ -96,8 +102,8 @@ export const makeMessage = async (msg: Message) => {
 
   // caso de escolha para voltar ao menu principal pela lógica de criação dos menus
   if (
-    chosenOption.id === 117 ||
-    chosenOption.id === 125 ||
+    chosenOption.id === 119 ||
+    chosenOption.id === 128 ||
     chosenOption.id === 13 ||
     chosenOption.id === 25 ||
     chosenOption.id === 35

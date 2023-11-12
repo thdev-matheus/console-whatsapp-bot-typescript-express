@@ -23,40 +23,54 @@ Em que podemos ajudar?`;
 
     {
       id: 112,
-      message: "2. E-commerce",
+      message: "2. Site dinâmico",
       action:
         "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
     },
 
     {
       id: 113,
-      message: "3. Catálogo",
+      message: "3. Loja virtual",
       action:
         "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
     },
 
     {
       id: 114,
-      message: "4. Landing page",
+      message: "4. Site one-page",
       action:
         "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
     },
 
     {
       id: 115,
-      message: "5. Portfólio",
+      message: "5. Portal",
       action:
         "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
     },
 
     {
       id: 116,
-      message: "6. Outro",
+      message: "6. Catálogo/portfólio",
       action:
         "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
     },
 
-    { id: 117, message: "7. Menu inicial" },
+    {
+      id: 117,
+      message: "7. Landing page",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
+
+    {
+      id: 118,
+      message: "8. Saiba como escolher",
+      action:
+        "Existem diferentes tipos de sites, cada um com um propósito diferente.\nSeparamos aqui algumas definições para que você possa saber qual é o tipo de site que deseja\n\nhttps://pontodesign.com.br/quais-os-7-principais-tipos-de-site-e-qual-o-mais-indicado-para-o-seu-negocio/",
+    },
+
+    { id: 119, message: "9. Menu inicial" },
 
     {
       id: 12,
@@ -72,26 +86,47 @@ Em que podemos ajudar?`;
 
     {
       id: 122,
-      message: "2. App E-commerce",
+      message: "2. App e-commerce",
       action:
         "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
     },
 
     {
       id: 123,
-      message: "3. App Catálogo",
+      message: "3. App catálogo/portfólio",
       action:
         "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
     },
 
     {
       id: 124,
-      message: "4. Outro",
+      message: "4. App catálogo/portfólio",
       action:
         "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
     },
 
-    { id: 125, message: "5. Menu inicial" },
+    {
+      id: 125,
+      message: "5. App catálogo/portfólio",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
+
+    {
+      id: 126,
+      message: "6. Outro",
+      action:
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+    },
+
+    {
+      id: 127,
+      message: "6. Saiba sobre aplicativos mobile",
+      action:
+        "A busca por aplicações mobile cresceu muito e continuará crescendo junto com a tecnologia.\nSeparamos aqui para você um artigo sobre a iportância de levar seu negócio para o digital.\nDaremos vida a sua idéia e com isso você estará um passo a frente no seu negócio.\n\nhttps://www.linkedin.com/pulse/3-motivos-para-voc%C3%AA-investir-em-um-aplicativo-mobile-code-n-app/",
+    },
+
+    { id: 128, message: "8. Menu inicial" },
 
     { id: 13, message: "3. Menu inicial" },
 
@@ -125,7 +160,7 @@ Em que podemos ajudar?`;
       id: 24,
       message: "4. Conhecer planos",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Conheça aqui os nossos planos para gerenciamento de redes sociais\n\nhttps://wa.me/p/6772499766181726/558196336588",
     },
 
     { id: 25, message: "5. Menu inicial" },
@@ -175,15 +210,13 @@ Em que podemos ajudar?`;
     {
       id: 5,
       message: "5. Ver catálogo",
-      action:
-        "Confira o nosso catálogo em:\nhttps://wa.me/c/558196336588\nA Kali Gráfica agradece o seu contato!",
+      action: "Confira o nosso catálogo em:\n\nhttps://wa.me/c/558196336588",
     },
 
     {
       id: 6,
       message: "6. Ver site",
-      action:
-        "Confira o nosso site em:\nhttps://kali-grafica.vercel.app/\nA Kali Gráfica agradece o seu contato!",
+      action: "Confira o nosso site em:\n\nhttps://kali-grafica.vercel.app/",
     },
 
     {
