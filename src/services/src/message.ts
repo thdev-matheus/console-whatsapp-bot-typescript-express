@@ -27,6 +27,7 @@ export class MessageMenu {
       chat.id._serialized,
       [1, 10]
     );
+    await StateConversation.changeFirstTimeConversation(chat.id._serialized);
     await chat.sendMessage(Flow.firstMessage);
     await chat.sendMessage(
       this.makeMenuMessage(Flow.menu.filter((menu) => menu.id < 10))

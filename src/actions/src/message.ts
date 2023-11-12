@@ -6,12 +6,23 @@ import { MessageMenu, MessageService } from "../../services";
 export const makeAnswer = async (msg: Message) => {
   const chat = await msg.getChat();
 
-  await StateConversation.loadState(chat.id);
-
   if (msg.body.toLowerCase().trim() === "obrigado!") {
     MessageService.finishService(chat);
   } else if (msg.body.toLowerCase().trim() === "olá!") {
     MessageService.startService(chat);
+  } else if (msg.body === "/p") {
+    await msg.delete(true);
+    await chat.sendMessage(
+      "Iniciando uma conversa privada\nAtivando protocolo de segurança"
+    );
+    await StateConversation.loadState(chat.id);
+    StateConversation.finishConversation(chat.id._serialized);
+  } else if (msg.body === "/x") {
+    await msg.delete(true);
+    await chat.sendMessage(
+      "Encerrando uma conversa privada\nDesativando protocolo de segurança"
+    );
+    StateConversation.deleteConversation(chat.id._serialized);
   }
 };
 
@@ -75,11 +86,11 @@ export const makeMessage = async (msg: Message) => {
     return;
   }
 
-  // caso de escoha por falar com atendente
+  // caso de escoha por encerrar o atendimento
   if (chosenOption.id === 7) {
     await chat.sendMessage(chosenOption.message);
     await chat.sendMessage(chosenOption.action);
-    await StateConversation.finishConversation(chat.id._serialized);
+    await StateConversation.deleteConversation(chat.id._serialized);
     return;
   }
 
@@ -104,7 +115,7 @@ export const makeMessage = async (msg: Message) => {
   if (chosenOption.action) {
     await chat.sendMessage(chosenOption.message);
     await chat.sendMessage(chosenOption.action);
-    await StateConversation.finishConversation(chat.id._serialized);
+    await StateConversation.serviceConversation(chat.id._serialized);
     return;
   }
 

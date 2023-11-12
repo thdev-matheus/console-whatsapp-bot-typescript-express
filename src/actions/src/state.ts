@@ -26,10 +26,6 @@ export class StateConversation {
     );
 
     if (conversationIndex !== -1) {
-      data[conversationIndex].firstTime &&
-        ((data[conversationIndex].firstTime = false),
-        await this.saveState(data));
-
       return data[conversationIndex];
     } else {
       const newConversation = await this.saveNewConversation(id);
@@ -76,6 +72,21 @@ export class StateConversation {
     }
   };
 
+  static changeFirstTimeConversation = async (idSerialized: string) => {
+    const data: IStateConversation[] = JSON.parse(
+      await readFile(this.stateFilePath, "utf-8")
+    );
+
+    const conversationIndex = data.findIndex(
+      (conv) => conv.id._serialized === idSerialized
+    );
+
+    if (conversationIndex !== -1) {
+      data[conversationIndex].firstTime = false;
+      await this.saveState(data);
+    }
+  };
+
   static serviceConversation = async (idSerialized: string) => {
     const data: IStateConversation[] = JSON.parse(
       await readFile(this.stateFilePath, "utf-8")
@@ -115,9 +126,8 @@ export class StateConversation {
       (conv) => conv.id._serialized === idSerialized
     );
 
-    if (conversationIndex !== -1) {
-      data.splice(conversationIndex, 1);
-      await this.saveState(data);
-    }
+    data.splice(conversationIndex, 1);
+
+    await this.saveState(data);
   };
 }
