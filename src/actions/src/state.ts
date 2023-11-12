@@ -126,8 +126,9 @@ export class StateConversation {
       (conv) => conv.id._serialized === idSerialized
     );
 
-    data.splice(conversationIndex, 1);
-
-    await this.saveState(data);
+    if (conversationIndex !== -1) {
+      data.splice(conversationIndex, 1);
+      await this.saveState(data);
+    }
   };
 }

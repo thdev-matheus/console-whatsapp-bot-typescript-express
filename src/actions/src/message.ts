@@ -7,28 +7,24 @@ export const makeAnswer = async (msg: Message) => {
   const chat = await msg.getChat();
 
   if (msg.body.toLowerCase().trim() === "obrigado!") {
-    MessageService.finishService(chat);
+    await MessageService.finishService(chat);
   } else if (msg.body.toLowerCase().trim() === "olá!") {
-    MessageService.startService(chat);
+    await MessageService.startService(chat);
   } else if (msg.body === "/p") {
-    await MessageService.startPrivateService(msg);
+    await msg.delete(true);
+    await MessageService.startPrivateService(chat);
   } else if (msg.body === "/x") {
-    await MessageService.finishPrivateService(msg);
+    await msg.delete(true);
+    await MessageService.finishPrivateService(chat);
   }
 };
 
 export const makeMessage = async (msg: Message) => {
-  if (msg.body === "/i") {
-    await MessageService.startPrivateService(msg);
-    return;
-  }
-
-  if (msg.body === "/f") {
-    await MessageService.finishPrivateService(msg);
-    return;
-  }
-
   const chat = await msg.getChat();
+
+  if (msg.body === "/p" || msg.body === "/x") {
+    return;
+  }
 
   const conversation = await StateConversation.loadState(chat.id);
 

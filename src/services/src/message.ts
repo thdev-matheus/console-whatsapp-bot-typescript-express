@@ -20,11 +20,7 @@ export class MessageService {
     await chat.clearState();
   };
 
-  static startPrivateService = async (msg: Message) => {
-    await msg.delete(true);
-
-    const chat = await msg.getChat();
-
+  static startPrivateService = async (chat: Chat) => {
     await chat.sendMessage(
       "Iniciando uma conversa privada\nAtivando protocolo de segurança"
     );
@@ -32,11 +28,7 @@ export class MessageService {
     await StateConversation.finishConversation(chat.id._serialized);
   };
 
-  static finishPrivateService = async (msg: Message) => {
-    await msg.delete(true);
-
-    const chat = await msg.getChat();
-
+  static finishPrivateService = async (chat: Chat) => {
     await chat.sendMessage(
       "Encerrando uma conversa privada\nDesativando protocolo de segurança"
     );
