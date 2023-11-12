@@ -18,49 +18,49 @@ Em que podemos ajudar?`;
       id: 111,
       message: "1. Site institucional",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu site institucional.",
     },
 
     {
       id: 112,
       message: "2. Site dinâmico",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu site dinâmico.",
     },
 
     {
       id: 113,
       message: "3. Loja virtual",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre a sua loja virtual.",
     },
 
     {
       id: 114,
       message: "4. Site one-page",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre a sua página única.",
     },
 
     {
       id: 115,
       message: "5. Portal",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu portal.",
     },
 
     {
       id: 116,
       message: "6. Catálogo/portfólio",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu catálogo ou portfólio.",
     },
 
     {
       id: 117,
       message: "7. Landing page",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre a sua landing page.",
     },
 
     {
@@ -81,35 +81,35 @@ Em que podemos ajudar?`;
       id: 121,
       message: "1. App institucional",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app institucional.",
     },
 
     {
       id: 122,
-      message: "2. App e-commerce",
+      message: "2. App loja",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app loja.",
     },
 
     {
       id: 123,
       message: "3. App catálogo/portfólio",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app catálogo ou app portfólio.",
     },
 
     {
       id: 124,
-      message: "4. App catálogo/portfólio",
+      message: "4. App de educação",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app de educação.",
     },
 
     {
       id: 125,
-      message: "5. App catálogo/portfólio",
+      message: "5. App funcionalidades pessoais",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app de funcionalidades pessoais.",
     },
 
     {
@@ -121,7 +121,7 @@ Em que podemos ajudar?`;
 
     {
       id: 127,
-      message: "6. Saiba sobre aplicativos mobile",
+      message: "7. Saiba sobre aplicativos mobile",
       action:
         "A busca por aplicações mobile cresceu muito e continuará crescendo junto com a tecnologia.\nSeparamos aqui para você um artigo sobre a iportância de levar seu negócio para o digital.\nDaremos vida a sua idéia e com isso você estará um passo a frente no seu negócio.\n\nhttps://www.linkedin.com/pulse/3-motivos-para-voc%C3%AA-investir-em-um-aplicativo-mobile-code-n-app/",
     },
@@ -139,21 +139,21 @@ Em que podemos ajudar?`;
       id: 21,
       message: "1. Plano inicial",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Com o plano inicial você dá o start e uma repaginada básica no seu insta.\nAlém disso vai ter dicas preciosas sobre como cuidar da aparência da sua rede e saber sobre o seu público.\n\nAguarde um pouco, em breve entraremos em contato para prosseguir com o atendimento.",
     },
 
     {
       id: 22,
       message: "2. Plano básico",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Com o plano básico você deixa com a gente que a gente cuida da sua rede criando postagens semanais, cuidando da aparência da sua rede, respeitando a sua regra de negócio e cuidando do crescimento do seu insta.\n\nAguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.",
     },
 
     {
       id: 23,
       message: "3. Plano master",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aqui na Kali, com o plano master, além de todos os benefícios do plano básico, vocÊ contará com um volume de postagens maior além de tráfego pago para impulsionar a sua rede.\n\nAguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.",
     },
 
     {
@@ -174,21 +174,21 @@ Em que podemos ajudar?`;
       id: 31,
       message: "1. Arte, diagramação ou ilustração",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Uma boa arte pode ser o diferencial que fará com que atinja o resultado que deseja.\nUma boa diagramação faz um texto se tornar fácil de ler além de tornar a leitura prazerosa e proveitosa.\nAqui na Kali você conta com excelência e versatilidade tanto de ferramentas quanto de técnicas que vão te ajudar a expressar sua ideia em forma de arte digital.\n\nAguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre a sua arte ou diagramação.",
     },
 
     {
       id: 32,
       message: "2. Impressão comum ou xerox",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, envie aqui os arquivos a serem impressos.\nTambém escreva os detalhes do seu pedido.",
     },
 
     {
       id: 33,
       message: "3. Impressão papel especial",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, envie aqui os arquivos para impressão e conte mais detalhes sobre o seu pedido",
     },
 
     {
