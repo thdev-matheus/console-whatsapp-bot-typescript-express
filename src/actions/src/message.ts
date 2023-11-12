@@ -11,22 +11,23 @@ export const makeAnswer = async (msg: Message) => {
   } else if (msg.body.toLowerCase().trim() === "olá!") {
     MessageService.startService(chat);
   } else if (msg.body === "/p") {
-    await msg.delete(true);
-    await chat.sendMessage(
-      "Iniciando uma conversa privada\nAtivando protocolo de segurança"
-    );
-    await StateConversation.loadState(chat.id);
-    StateConversation.finishConversation(chat.id._serialized);
+    await MessageService.startPrivateService(msg);
   } else if (msg.body === "/x") {
-    await msg.delete(true);
-    await chat.sendMessage(
-      "Encerrando uma conversa privada\nDesativando protocolo de segurança"
-    );
-    StateConversation.deleteConversation(chat.id._serialized);
+    await MessageService.finishPrivateService(msg);
   }
 };
 
 export const makeMessage = async (msg: Message) => {
+  if (msg.body === "/i") {
+    await MessageService.startPrivateService(msg);
+    return;
+  }
+
+  if (msg.body === "/f") {
+    await MessageService.finishPrivateService(msg);
+    return;
+  }
+
   const chat = await msg.getChat();
 
   const conversation = await StateConversation.loadState(chat.id);

@@ -1,4 +1,4 @@
-import { Chat } from "whatsapp-web.js";
+import { Chat, Message } from "whatsapp-web.js";
 import { StateConversation } from "../../actions";
 import { IMenu } from "../../types/menu.type";
 import { Flow } from "../../flow";
@@ -18,6 +18,29 @@ export class MessageService {
     );
     await StateConversation.deleteConversation(chat.id._serialized);
     await chat.clearState();
+  };
+
+  static startPrivateService = async (msg: Message) => {
+    await msg.delete(true);
+
+    const chat = await msg.getChat();
+
+    await chat.sendMessage(
+      "Iniciando uma conversa privada\nAtivando protocolo de segurança"
+    );
+    await StateConversation.loadState(chat.id);
+    await StateConversation.finishConversation(chat.id._serialized);
+  };
+
+  static finishPrivateService = async (msg: Message) => {
+    await msg.delete(true);
+
+    const chat = await msg.getChat();
+
+    await chat.sendMessage(
+      "Encerrando uma conversa privada\nDesativando protocolo de segurança"
+    );
+    await StateConversation.deleteConversation(chat.id._serialized);
   };
 }
 
