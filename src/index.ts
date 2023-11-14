@@ -8,11 +8,12 @@ client.on("message", async (msg) => {
     return;
   }
 
-  const contact = await chat.getContact();
+  // const contact = await chat.getContact();
+  makeMessage(msg);
 
-  if (contact.name == "Jess") {
-    makeMessage(msg);
-  }
+  // if (contact.name == "Jess" || contact.name === "Will VC") {
+  //   makeMessage(msg);
+  // }
 });
 
 client.on("message_create", async (msg) => {
