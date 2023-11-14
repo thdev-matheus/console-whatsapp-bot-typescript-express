@@ -18,49 +18,49 @@ Em que podemos ajudar?`;
       id: 111,
       message: "1. Site institucional",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu site institucional.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu site institucional.",
     },
 
     {
       id: 112,
       message: "2. Site dinâmico",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu site dinâmico.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu site dinâmico.",
     },
 
     {
       id: 113,
       message: "3. Loja virtual",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre a sua loja virtual.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre a sua loja virtual.",
     },
 
     {
       id: 114,
       message: "4. Site one-page",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre a sua página única.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre a sua página única.",
     },
 
     {
       id: 115,
       message: "5. Portal",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu portal.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu portal.",
     },
 
     {
       id: 116,
       message: "6. Catálogo/portfólio",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu catálogo ou portfólio.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu catálogo ou portfólio.",
     },
 
     {
       id: 117,
       message: "7. Landing page",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre a sua landing page.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre a sua landing page.",
     },
 
     {
@@ -81,49 +81,49 @@ Em que podemos ajudar?`;
       id: 121,
       message: "1. App institucional",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app institucional.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app institucional.",
     },
 
     {
       id: 122,
       message: "2. App loja",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app loja.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app loja.",
     },
 
     {
       id: 123,
       message: "3. App catálogo/portfólio",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app catálogo ou app portfólio.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app catálogo ou app portfólio.",
     },
 
     {
       id: 124,
       message: "4. App de educação",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app de educação.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app de educação.",
     },
 
     {
       id: 125,
       message: "5. App funcionalidades pessoais",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app de funcionalidades pessoais.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu app de funcionalidades pessoais.",
     },
 
     {
       id: 126,
       message: "6. Outro",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
     },
 
     {
       id: 127,
       message: "7. Saiba sobre aplicativos mobile",
       action:
-        "A busca por aplicações mobile cresceu muito e continuará crescendo junto com a tecnologia.\nSeparamos aqui para você um artigo sobre a iportância de levar seu negócio para o digital.\nDaremos vida a sua idéia e com isso você estará um passo a frente no seu negócio.\n\nhttps://www.linkedin.com/pulse/3-motivos-para-voc%C3%AA-investir-em-um-aplicativo-mobile-code-n-app/",
+        "A busca por aplicações mobile cresceu muito e continuará crescendo junto com a tecnologia.\nSeparamos aqui para você um artigo sobre a importância de levar seu negócio para o digital.\nDaremos vida a sua idéia e com isso você estará um passo a frente no seu negócio.\n\nhttps://www.linkedin.com/pulse/3-motivos-para-voc%C3%AA-investir-em-um-aplicativo-mobile-code-n-app/",
     },
 
     { id: 128, message: "8. Menu inicial" },
@@ -174,28 +174,28 @@ Em que podemos ajudar?`;
       id: 31,
       message: "1. Arte, diagramação ou ilustração",
       action:
-        "Uma boa arte pode ser o diferencial que fará com que atinja o resultado que deseja.\nUma boa diagramação faz um texto se tornar fácil de ler além de tornar a leitura prazerosa e proveitosa.\nAqui na Kali você conta com excelência e versatilidade tanto de ferramentas quanto de técnicas que vão te ajudar a expressar sua ideia em forma de arte digital.\n\nAguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre a sua arte ou diagramação.",
+        "Uma boa arte pode ser o diferencial que fará com que atinja o resultado que deseja.\nUma boa diagramação faz um texto se tornar fácil de ler além de tornar a leitura prazerosa e proveitosa.\nAqui na Kali você conta com excelência e versatilidade tanto de ferramentas quanto de técnicas que vão te ajudar a expressar sua ideia em forma de arte digital.\n\nAguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre a sua arte ou diagramação.",
     },
 
     {
       id: 32,
       message: "2. Impressão comum ou xerox",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, envie aqui os arquivos a serem impressos.\nTambém escreva os detalhes do seu pedido.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, envie aqui os arquivos a serem impressos.\nTambém escreva os detalhes do seu pedido.",
     },
 
     {
       id: 33,
       message: "3. Impressão papel especial",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, envie aqui os arquivos para impressão e conte mais detalhes sobre o seu pedido",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, envie aqui os arquivos para impressão e conte mais detalhes sobre o seu pedido",
     },
 
     {
       id: 34,
       message: "4. personalizados",
       action:
-        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
+        "Aguarde um pouco, em breve entraremos em contato para prosseguir com o seu atendimento.\nDigite encerrar a qualquer momento para terminar o atendimento\nEnquanto aguarda, conte-nos um pouco mais sobre o seu pedido, toda informação é útil.",
     },
 
     { id: 35, message: "5. Menu inicial" },
@@ -204,7 +204,7 @@ Em que podemos ajudar?`;
       id: 4,
       message: "4. Falar com atendente",
       action:
-        "Você solicitou falar com atendente.\nDentro de instantes entraremos em contato.\nPara melhor atender, conte aqui o que deseja.",
+        "Você solicitou falar com atendente.\nDentro de instantes entraremos em contato.\nDigite encerrar a qualquer momento para terminar o atendimento\n\nPara melhor atender, conte aqui o que deseja.",
     },
 
     {
