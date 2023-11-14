@@ -4,3 +4,4 @@ node_modules
 .wwebjs_cache
 /src/utils/src/resources/*.ogg
 dist
+index.html

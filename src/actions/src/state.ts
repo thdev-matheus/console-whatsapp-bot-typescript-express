@@ -1,5 +1,4 @@
 import { readFile, writeFile } from "fs/promises";
-import { Chat } from "whatsapp-web.js";
 import path from "path";
 import {
   IChatId,
