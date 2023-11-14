@@ -1,0 +1,58 @@
+[
+  {
+    "id": {
+      "server": "c.us",
+      "user": "558188799343",
+      "_serialized": "558188799343@c.us"
+    },
+    "firstTime": false,
+    "finished": false,
+    "menuChoose": [
+      120,
+      130
+    ],
+    "inService": true
+  },
+  {
+    "id": {
+      "server": "c.us",
+      "user": "558196732411",
+      "_serialized": "558196732411@c.us"
+    },
+    "firstTime": false,
+    "finished": false,
+    "menuChoose": [
+      20,
+      30
+    ],
+    "inService": true
+  },
+  {
+    "id": {
+      "server": "broadcast",
+      "user": "status",
+      "_serialized": "status@broadcast"
+    },
+    "firstTime": false,
+    "finished": false,
+    "menuChoose": [
+      1,
+      10
+    ],
+    "inService": false
+  },
+  {
+    "id": {
+      "server": "c.us",
+      "user": "558196268795",
+      "_serialized": "558196268795@c.us"
+    },
+    "firstTime": false,
+    "finished": false,
+    "menuChoose": [
+      1,
+      10
+    ],
+    "inService": false
+  }
+]

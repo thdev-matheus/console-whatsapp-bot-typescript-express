@@ -1,33 +1,29 @@
 import "dotenv/config";
 import { client } from "./clientWhats";
-import { createTranscription } from "./openai";
-import {
-  convertBase64ToAudio,
-  isAudioAndNotGroup,
-  sendMessageOnGroup,
-} from "./utils";
-import { v4 as uuid } from "uuid";
+import { makeMessage, makeAnswer } from "./actions";
 
 client.on("message", async (msg) => {
-  if (await isAudioAndNotGroup(msg)) {
-    const media = await msg.downloadMedia();
-
-    const fileName = media.filename || "audio";
-
-    convertBase64ToAudio(media.data, fileName);
+  const chat = await msg.getChat();
+  if (chat.isGroup) {
+    return;
   }
+
+  // const contact = await chat.getContact();
+  makeMessage(msg);
+
+  // if (contact.name == "Jess" || contact.name === "Will VC") {
+  //   makeMessage(msg);
+  // }
 });
 
 client.on("message_create", async (msg) => {
-  if (msg.body == "/toText") {
-    const replyedAudioOwner = await client.getContactById(msg.to);
-    const replyedOwnerName = replyedAudioOwner.name;
+  const chat = await msg.getChat();
 
-    const textAudio = await createTranscription(`audio.ogg`);
-
-    await sendMessageOnGroup(client, textAudio, replyedOwnerName!);
-    await msg.delete(true);
+  if (chat.isGroup) {
+    return;
   }
+
+  makeAnswer(msg);
 });
 
 client.initialize();
